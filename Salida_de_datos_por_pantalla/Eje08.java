@@ -16,5 +16,6 @@ public class Eje08 {
         System.out.println("   * *");
         System.out.println("    *");
 
+
     }
 }
