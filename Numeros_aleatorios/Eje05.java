@@ -17,9 +17,12 @@ public class Eje05 {
 
         for(int i=1; i<=50;i++){
 
-            int alea = (int)((Math.random())+100); // Math.random() lanza valores de 0 hasta 0.9 periódico al sumarle 100, 
-                                                       // lo trasladamos para que incie en 100 (0+100=100), por lo que ahora lanzaría 
-                                                       // valores del 100 al 100.9 periódico. Al multiplicarlo x100 corremos la coma
+            int alea = (int)((Math.random()*100)+100); // Math.random() lanza valores de 0 hasta 0.9 periódico, al  
+                                                       // multiplicarlo x100 corremos la coma dos lugares por lo que si obtenos    
+                                                       // 0.99 sería 99 (tope del ejercico).
+                                                       // Al sumarle 100 conseguimos que se mueva enntre el rango deseado.
+                                                       // Si sale 0 Math.random() hará (0*100=0) + 100 = 100.
+                                                       // Si sale 0.99 Math.random() hará (0.99*100=99) + 100 = 199.
 
             media+=alea;
             System.out.println(i+" "+alea);
