@@ -28,10 +28,10 @@ public class Eje26 {
         System.out.print("Introduzca un dígito: ");
         int dig = sc.nextInt();
         int nvolt2=0;
-        int pos=1;
 
         System.out.printf("El digito %d se encuentra en las posiciones ",dig);
 
+        int pos=1;
         do{
 
             nvolt2=nvolt2*10+nvolt%10;
