@@ -17,7 +17,7 @@ public class Eje06 {
         int opor=5;
         int alea=(int)(Math.random()*101); // Al multiplicar por 101, en vez de que Math.random() genere números aleatroios
                                            // entre 0 y 1 (exclusivo de 1), es decir, 0 <= Math.random() < 1
-                                           // y da resultado a un número aleatorio entre o y 101 (exclusivo de 101);
+                                           // da resultado a un número aleatorio entre 0 y 101 (exclusivo de 101);
 
         boolean gana=false;
 
