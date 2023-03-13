@@ -24,18 +24,25 @@ public class Eje17 {
         System.out.print("Ahora introduzca la anchura (como mínimo 4): ");
         int anch = sc.nextInt();
 
-        for(int i=1; i<=alt;i++){
+        /* Posición del pez */
+        int posx = (int)(Math.random()*(anch-2)+2);
+        int posy = (int)(Math.random()*(alt-2)+2);
+        /* ---------------- */
 
-            for(int j=i; j<anch; j++){
-
-                if(j==1 || j==alt){
+        for(int i=1; i<=alt; i++){
+            for(int j=1; j<=anch; j++){
+                if(i==1 || i==alt || j==1 || j==anch){
                     System.out.print("* ");
+                }else if(j==posx && i==posy){
+                    System.out.print("& ");
                 }
-
+                else{
+                    System.out.print("  ");
+                }
             }
-
-            System.out.println("");
+            System.out.println();
         }
-        
+
+        sc.close();
     }
 }
