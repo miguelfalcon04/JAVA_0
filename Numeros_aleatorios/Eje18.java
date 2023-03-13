@@ -10,64 +10,108 @@ naranja.
 
 @author Miguel Falcón
 */
-sd
+
 public class Eje18 {
     public static void main(String[] args) {
 
-        int n;
-        String color="";
-        boolean rojo=false;
-        boolean azul=false;
-        boolean verde=false;
-        boolean amarillo=false;
-        boolean violeta=false;
-        boolean naranja=false;
-
-        for(int i=1; i<=3; i++){
+        int c1;
+        int c2;
+        int c3;
+        String color1="";
+        String color2="";
+        String color3="";
 
             do{
+                c1 = (int)(Math.random()*6);
+                c2 = (int)(Math.random()*6);
+                c3 = (int)(Math.random()*6);
+            }while(c1==c2 || c2==c3 || c2==c3);
 
-                n = (int)(Math.random()*6);
-
-            }while(rojo==false || azul==false || verde==false || amarillo==false || violeta==false || naranja==false);
-
-            switch(n){
+            switch(c1){
 
                 case 0:
-                color="rojo";
-                rojo=true;
+                color1="rojo";
                 break;
 
                 case 1:
-                color="azul";
-                azul=true;
+                color1="azul";
                 break;
 
                 case 2:
-                color="verde";
-                verde=true;
+                color1="verde";
                 break;
 
                 case 3:
-                color="amarillo";
-                amarillo=true;
+                color1="amarillo";
                 break;
 
                 case 4:
-                color="violeta";
-                violeta=true;
+                color1="violeta";
                 break;
 
                 case 5:
-                color="naranja";
-                rojo=true;
+                color1="naranja";
                 break;
 
             }
 
-            System.out.println("Color para la habitaciín nº "+i+": "+color);
+            switch(c2){
 
-        }
-        
+                case 0:
+                color2="rojo";
+                break;
+
+                case 1:
+                color2="azul";
+                break;
+
+                case 2:
+                color2="verde";
+                break;
+
+                case 3:
+                color2="amarillo";
+                break;
+
+                case 4:
+                color2="violeta";
+                break;
+
+                case 5:
+                color2="naranja";
+                break;
+
+            }
+
+            switch(c3){
+
+                case 0:
+                color3="rojo";
+                break;
+
+                case 1:
+                color3="azul";
+                break;
+
+                case 2:
+                color3="verde";
+                break;
+
+                case 3:
+                color3="amarillo";
+                break;
+
+                case 4:
+                color3="violeta";
+                break;
+
+                case 5:
+                color3="naranja";
+                break;
+
+            }
+
+            System.out.print("Color 1: "+color1+"\nColor 2: "+color2+"\nColor 3: "+color3);
+
     }
 }
