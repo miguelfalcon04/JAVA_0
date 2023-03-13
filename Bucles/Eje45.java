@@ -9,7 +9,7 @@ correctamente los datos.
 
 @author Miguel Falcón
 */
-
+asgqw
 import java.util.Scanner;
 public class Eje45{
     public static void main(String[] args) {
