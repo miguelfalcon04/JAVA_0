@@ -27,10 +27,8 @@ public class Eje46 {
 
             for(int i = 1; i<=alt; i++){
 
-                System.out.print("*");
-
                 for(int j=1; j<=anch;j++){
-                    if(i==1 || i==alt){
+                    if(i==1 || i==alt  || j==1 || j==anch){
                         System.out.print("* ");
                     }
                     else{
@@ -38,7 +36,7 @@ public class Eje46 {
                     }
                 }
 
-                System.out.println("*");
+                System.out.println();
 
             }
         }
